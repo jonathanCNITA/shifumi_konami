@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="konami.js"></script>
+    <script src="script_5.js"></script>
+    <script type="text/javascript" src="shifumi.js"></script>
+</head>
+
+<body>
+    <div class="container text-center">
+    	<div class="jumbotron">
+    		<h1>Rock Paper Scissors</h1>
+    	</div>
+    	<section class="col-md-12 center-block">
+    		<div class="col-xs-4">
+    			<img src="assets/pierre.png"  data-value="rock">
+    		</div>
+    		<div class="col-xs-4">
+    			<img src="assets/feuille.png" data-value="paper">
+    		</div>
+    		<div class="col-xs-4">
+    			<img src="assets/ciseau.png"  data-value="scissors">
+    		</div>
+    	</section>
+
+    	<section class="bg-secondary">
+    		<div id="userChoice"><b>Your choice :</b> </div>
+    		<div id="computerChoice"><b>computer choice :</b> </div>
+    		<div id="result" class="h3 well">match result</div>
+    	</section>
+    	
+    	<div class="bg-secondary">
+    		<div>
+    		  <h2>Round</h2>
+    		  <h2 id="nbGame">0</h2>
+    	    </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="col-sm-4">
+                <h4>Your score</h4>
+                <p id="userScore">0</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Tied matchs</h4>
+                <p id="tiedMatchs">0</p>
+            </div>
+            <div class="col-sm-4">
+                <h4>Computer score</h4>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+    </div>
+    	
+
+    
+</body>
+
+</html>
