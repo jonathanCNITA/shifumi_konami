@@ -36,7 +36,7 @@ $(document).ready(function() {
 				let result = determineWinner($userValue, computerSay);
 				$('#result').removeClass().addClass("well h3").css("color","");
 
-				if(superPlayer || result === 'You Win') {
+				if(konami.superPlayer || result === 'You Win') {
 					userScore++;
 					$('#result').css("color","green");
 					$('#userScore').text(`${ userScore }`);
@@ -49,7 +49,7 @@ $(document).ready(function() {
 					$('#tiedMatchs').text(`${ tiedMatchs }`);
 				}
 
-				if(superPlayer) {
+				if(konami.superPlayer) {
 					result = 'You win';
 				}
 
