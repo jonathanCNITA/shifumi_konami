@@ -61,11 +61,9 @@ $(document).ready(function() {
 	});
 
 	
-	// Konami code
+	// check Konami code when key up
 	$(document).keyup(function(k) {
 		konami.checkKonami(k);
-		superPlayer = konami.isSuperPlayer();
-		
 	});
 });
 
